@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>cmake_utils</name>
+  <version>0.1.0</version>
+  <description>ROS 2 port of FAPP cmake_utils.</description>
+  <maintainer email="young-yang-lei@users.noreply.github.com">Young-yang-lei</maintainer>
+  <license>LGPLv3</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

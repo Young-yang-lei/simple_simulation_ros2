@@ -1,0 +1,9 @@
+/**:
+  ros__parameters:
+    camera.width: 640
+    camera.height: 480
+    camera.fx: 387.229
+    camera.fy: 387.229
+    camera.cx: 321.046
+    camera.cy: 243.45
+    publish_depth: false

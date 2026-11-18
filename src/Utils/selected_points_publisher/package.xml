@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>selected_points_publisher</name>
+  <version>0.1.0</version>
+  <description>ROS 2 port of FAPP selected_points_publisher.</description>
+  <maintainer email="young-yang-lei@users.noreply.github.com">Young-yang-lei</maintainer>
+  <license>Apache 2</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>rviz_common</depend>
+  <depend>rviz_rendering</depend>
+  <depend>rviz_default_plugins</depend>
+  <depend>pluginlib</depend>
+  <depend>qtbase5-dev</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

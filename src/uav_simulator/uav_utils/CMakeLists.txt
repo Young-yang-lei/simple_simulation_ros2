@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.16)
+project(uav_utils)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_compile_options(-Wall -Wextra -Wno-unused-parameter)
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+find_package(Eigen3 REQUIRED)
+install(DIRECTORY include/ DESTINATION include)
+install(PROGRAMS scripts/odom_to_euler.py scripts/send_odom.py scripts/tf_assist.py scripts/topic_statistics.py DESTINATION lib/${PROJECT_NAME})
+ament_export_include_directories(include)
+ament_export_dependencies(rclcpp nav_msgs geometry_msgs Eigen3)
+
+ament_package()

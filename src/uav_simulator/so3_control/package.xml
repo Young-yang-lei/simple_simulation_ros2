@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>so3_control</name>
+  <version>0.1.0</version>
+  <description>ROS 2 port of FAPP so3_control.</description>
+  <maintainer email="young-yang-lei@users.noreply.github.com">Young-yang-lei</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>eigen</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

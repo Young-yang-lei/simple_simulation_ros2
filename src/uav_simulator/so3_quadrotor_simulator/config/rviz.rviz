@@ -1,0 +1,58 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: world
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Local cloud
+      Enabled: true
+      Topic:
+        Value: cloud
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+      Size (m): 0.06
+      Color Transformer: AxisColor
+    - Class: rviz_default_plugins/Marker
+      Name: Vehicle
+      Enabled: true
+      Topic:
+        Value: robot
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+    - Class: rviz_default_plugins/Path
+      Name: Flight path
+      Enabled: true
+      Topic:
+        Value: path
+        Reliability Policy: Reliable
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Depth: 5
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_plugins/Goal3DTool
+    - Class: rviz_plugin_selected_points_publisher/SelectedPointsPublisher
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 25
+      Pitch: 0.6
+      Yaw: 0.7
+Window Geometry:
+  Width: 1200
+  Height: 800

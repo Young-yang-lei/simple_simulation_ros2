@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>assign_goals</name>
+  <version>0.1.0</version>
+  <description>ROS 2 port of FAPP assign_goals.</description>
+  <maintainer email="young-yang-lei@users.noreply.github.com">Young-yang-lei</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>uav_utils</depend>
+  <depend>eigen</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,3 @@
+<library path="rviz_plugins">
+  <class name="rviz_plugins/Goal3DTool" type="uav_rviz::Goal3DTool" base_class_type="rviz_common::Tool"><description>ROS2 UAV interaction tool</description></class>
+</library>
